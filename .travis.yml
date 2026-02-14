@@ -5,6 +5,6 @@ install:
 - sudo dpkg --add-architecture i386
 - sudo apt update && sudo apt install -y g++-multilib
 script:
-- sampctl package ensure
-- sampctl package build
-- sampctl package run
+- sampctl ensure
+- sampctl build
+- sampctl run
